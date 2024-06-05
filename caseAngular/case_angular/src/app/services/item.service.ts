@@ -15,4 +15,8 @@ export class ItemServices {
   getItemList(): Observable<any> {
     return this._http.get('http://localhost:3000/items');
   }
+
+  deleteItem(id: number): Observable<any> {
+    return this._http.delete(`http://localhost:3000/items/${id}`)
+  }
 }

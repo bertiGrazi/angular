@@ -43,4 +43,14 @@ export class AppComponent implements OnInit {
       error: console.log
     })
   }
+
+  deleteItems(id: number) {
+    this._itemService.deleteItem(id).subscribe({
+      next: (res) => {
+        alert('Item Deletado!')
+        this.getItemsList()
+      },
+      error: console.log
+    })
+  }
 }
