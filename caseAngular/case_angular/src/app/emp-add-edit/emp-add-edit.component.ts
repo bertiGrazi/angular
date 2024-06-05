@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ItemServices } from '../services/item.service';
-import { DialogRef } from '@angular/cdk/dialog';
+import { MatDialogRef } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-emp-add-edit',
@@ -13,7 +13,7 @@ export class EmpAddEditComponent {
 
   numbers: number[] = Array.from({ length: 100 }, (_, i) => i + 1);
 
-  constructor(private _fb: FormBuilder, private _empService: ItemServices, private _dialogRef: DialogRef<EmpAddEditComponent>) {
+  constructor(private _fb: FormBuilder, private _empService: ItemServices, private _dialogRef: MatDialogRef<EmpAddEditComponent>) {
     this.empForm = this._fb.group({
       nameItem: '',
       measure: '',
@@ -30,7 +30,7 @@ export class EmpAddEditComponent {
       this._empService.addItem(this.empForm.value).subscribe({
         next: (val: any) => {
           alert('Item adicionado com sucesso!')
-          this._dialogRef.close();
+          this._dialogRef.close(true);
         }, 
         error: (err: any) => {
           console.log(err)
