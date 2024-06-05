@@ -9,6 +9,16 @@
       "product": "Sim",
       "validity": "2024-06-22T03:00:00.000Z",
       "fabrication": "2034-06-28T03:00:00.000Z"
+    },
+    {
+      "id": "5006",
+      "nameItem": "Teste da Grazi",
+      "measure": 2,
+      "amount": 22,
+      "price": 3,
+      "product": "Não",
+      "validity": "2024-06-29T03:00:00.000Z",
+      "fabrication": "2024-06-23T03:00:00.000Z"
     }
   ]
 }
