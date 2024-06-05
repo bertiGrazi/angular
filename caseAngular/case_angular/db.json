@@ -1,26 +1,6 @@
 {
   "items": [
     {
-      "id": "722c",
-      "nameItem": "Teste",
-      "measure": 2,
-      "amount": 3,
-      "price": 33,
-      "product": "",
-      "validity": "2024-06-29T03:00:00.000Z",
-      "fabrication": "2024-06-27T03:00:00.000Z"
-    },
-    {
-      "id": "9bb0",
-      "nameItem": "Teste 2",
-      "measure": 5,
-      "amount": 3,
-      "price": 33,
-      "product": "2",
-      "validity": "2024-06-29T03:00:00.000Z",
-      "fabrication": "2024-06-17T03:00:00.000Z"
-    },
-    {
       "id": "5310",
       "nameItem": "Teste 3",
       "measure": 5,
